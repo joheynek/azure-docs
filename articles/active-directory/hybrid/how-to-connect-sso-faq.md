@@ -86,7 +86,7 @@ Follow these steps on the on-premises server where you are running Azure AD Conn
 4. Run PowerShell as an Administrator. In PowerShell, call `New-AzureADSSOAuthenticationContext`. This command should give you a popup to enter your tenant's Global Administrator credentials.
 5. Call `Get-AzureADSSOStatus | ConvertFrom-Json`. This command provides you the list of AD forests (look at the "Domains" list) on which this feature has been enabled.
 
-### Step 2. Update the Kerberos decryption key on each AD forest that it was set it up on
+### Step 2. Update the Kerberos decryption key on each AD forest that it was set up on
 
 1. Call `$creds = Get-Credential`. When prompted, enter the Domain Administrator credentials for the intended AD forest.
 
